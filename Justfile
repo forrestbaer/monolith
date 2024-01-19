@@ -1,8 +1,8 @@
 deploy:
   nixos-rebuild switch --flake .
 
-debug:
-  nixos-rebuild switch --flake . --show-trace --verbose
+test:
+  nixos-rebuild test --flake . --show-trace --verbose
 
 up:
   nix flake update
@@ -22,6 +22,5 @@ clean:
   sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than 7d
 
 gc:
-  # garbage collect all unused nix store entries
   sudo nix store gc --debug
   sudo nix-collect-garbage --delete-old
