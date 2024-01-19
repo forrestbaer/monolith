@@ -145,10 +145,11 @@
     zig
     nodejs
     ghc
+    cabal-install
+    qjackctl
     go
     openjdk
     tree-sitter
-    taskwarrior
     rustup
     cargo
     ruby

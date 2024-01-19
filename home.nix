@@ -13,11 +13,13 @@
 
   home.packages = with pkgs; [
     gitui
+    taskwarrior
     lsd
+    qmk
     neofetch
     nix-bash-completions
     haskellPackages.tidal
-    supercollider-with-plugins
+    supercollider-with-sc3-plugins
     ocenaudio
     nodePackages.typescript
     nodePackages.typescript-language-server
