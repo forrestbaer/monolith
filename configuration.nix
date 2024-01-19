@@ -102,6 +102,7 @@
     gh
     git
     neovim
+    vimPlugins.vim-nix
     tmux
     tmux-mem-cpu-load
     zip
@@ -120,6 +121,8 @@
     zstd
     gnupg
     luarocks
+    lua
+    luajit
     nix-output-monitor
     delta
     glow
@@ -147,6 +150,7 @@
     tree-sitter
     taskwarrior
     rustup
+    cargo
     ruby
     julia
     php
@@ -156,6 +160,7 @@
     cmake
     clang
     pass-wayland
+    wl-clipboard
   ];
 
   environment.variables.EDITOR = "nvim";
