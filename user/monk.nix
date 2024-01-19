@@ -1,6 +1,7 @@
 { config, pkgs, lib, ... }:
 
 # rustup default stable - first boot
+# neovim packer sync - first boot
 
 {
   home.username = "monk";

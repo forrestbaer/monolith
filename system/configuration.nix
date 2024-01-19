@@ -165,6 +165,7 @@
   ];
 
   environment.variables.EDITOR = "nvim";
+  fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "Iosevka" "IosevkaTerm" "FiraCode" "DroidSansMono" ]; })
   ];
@@ -179,7 +180,7 @@
 
   services.openssh.enable = true;
   system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = false; 
+  system.autoUpgrade.allowReboot = false;
 
   system.stateVersion = "23.11"; # Did you read the comment?
 }
