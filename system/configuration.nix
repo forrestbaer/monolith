@@ -7,13 +7,14 @@
 
   boot.loader = {
     systemd-boot.enable = true;
+    systemd-boot.configurationLimit = 5;
     efi.canTouchEfiVariables = true;
   };
 
   environment.systemPackages = with pkgs; [
     alacritty bash binutils btop cabal-install cargo clang cmake conda
     cool-retro-term coreutils curl delta ethtool fd fzf gawk gcc gh ghc
-    git glow gnome.gnome-tweaks gnupg gnused gnutar go iftop iotop jq julia
+    git glow gnome.gnome-tweaks gnupg gnused gnutar go iftop iotop jq julia just
     lm_sensors lsof ltrace lua luajit luarocks mtr neovim ninja nix-output-monitor
     nodejs openjdk pass-wayland pciutils php python3Full qjackctl qpwgraph
     qutebrowser ripgrep ruby rustup strace sysstat tmux tmux-mem-cpu-load
@@ -51,8 +52,19 @@
     networkmanager.enable = true;
   };
 
+  nix = {
+    settings = {
+      experimental-features = [ "nix-command" "flakes" ];
+      auto-optimise-store = true;
+    };
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 1w";
+    };
+  };
+
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   programs = {
     fzf.keybindings = true;
