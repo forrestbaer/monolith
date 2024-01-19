@@ -3,7 +3,6 @@
     enable = true;
     withNodeJs = true;
     withPython3 = true;
-    withRuby = true;
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
@@ -142,7 +141,7 @@ vim.g.tidal_default_config             = {socket_name = "default", target_pane =
 
 vim.opt.clipboard      =  "unnamedplus"
 
-local lsp_servers = {"lua_ls","tsserver","zls","html","bashls","eslint","jsonls","emmet_ls","pylsp","nil_ls"}
+local lsp_servers = {"lua_ls","tsserver","html","bashls","eslint","jsonls","emmet_ls","pylsp","nil_ls"}
 
 local mason = check_package("mason")
 if (mason) then
@@ -175,21 +174,8 @@ if (treesitter) then
 
   require("nvim-treesitter.configs").setup {
     ensure_installed = { "vim", "python", "c", "cpp", "regex", "javascript", "lua", "typescript", "html", "vimdoc" },
-    incremental_selection = {
-      enable = true,
-      keymaps = {
-        init_selection = "gnn",
-        node_incremental = "grn",
-        scope_incremental = "grc",
-        node_decremental = "grm",
-      },
-    },
-    highlight = {
-      enable = true,
-    },
-    indent = {
-      enable = true,
-    },
+    highlight = { enable = true, },
+    indent = { enable = true, },
   }
 else
   vim.cmd("lua TSUpdate")

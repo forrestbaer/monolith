@@ -1,6 +1,5 @@
 { pkgs, ... }:
 
-# rustup default stable - first boot
 # neovim packer sync - first boot
 
 {
@@ -20,17 +19,27 @@
     username = "monk";
     homeDirectory = "/home/monk";
     packages = with pkgs; [
+      bun
+      cabal-install
+      cool-retro-term
+      delta
+      deno
+      ghc
       gitui
-      taskwarrior
-      lsd
-      qmk
-      neofetch
-      nix-bash-completions
       haskellPackages.tidal
-      supercollider-with-sc3-plugins
+      just
+      lsd
+      nix-bash-completions
       ocenaudio
-      nodePackages.typescript
-      nodePackages.typescript-language-server
+      opencv
+      pass-wayland
+      qjackctl
+      qmk
+      qpwgraph
+      qutebrowser
+      supercollider-with-sc3-plugins
+      taskwarrior
+      tmux-mem-cpu-load
     ];
     sessionVariables = {
       PROMPT_COMMAND = "history -a";
@@ -42,11 +51,6 @@
   xdg.userDirs = {
     enable = true;
     createDirectories = false;
-  };
-
-  programs.direnv = {
-    enable = true;
-    # config = { };
   };
 
   programs.home-manager.enable = true;

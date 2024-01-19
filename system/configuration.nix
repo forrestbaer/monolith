@@ -12,14 +12,40 @@
   };
 
   environment.systemPackages = with pkgs; [
-    alacritty bash binutils btop cabal-install cargo clang cmake conda
-    cool-retro-term coreutils curl delta ethtool fd fzf gawk gcc gh ghc
-    git glow gnome.gnome-tweaks gnupg gnused gnutar go iftop iotop jq julia just
-    lm_sensors lsof ltrace lua luajit luarocks mtr neovim ninja nix-output-monitor
-    nodejs openjdk pass-wayland pciutils php python3Full qjackctl qpwgraph
-    qutebrowser ripgrep ruby rustup strace sysstat tmux tmux-mem-cpu-load
-    tree-sitter unrar unzip usbutils vimPlugins.vim-nix wget which
-    wl-clipboard zig zip zstd
+    alacritty
+    bash
+    binutils
+    clang
+    cmake
+    coreutils
+    fd
+    fzf
+    gawk
+    gcc
+    gh
+    git
+    gnupg
+    gnused
+    gnutar
+    lua
+    luajit
+    neovim
+    nodePackages.typescript
+    nodePackages.typescript-language-server
+    nodejs
+    gnumake
+    python3Full
+    ripgrep
+    tmux
+    tree-sitter
+    unrar
+    unzip
+    vim
+    w3m
+    wget
+    which
+    wl-clipboard
+    zip
   ];
   environment.variables.EDITOR = "nvim";
 
