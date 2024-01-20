@@ -62,6 +62,7 @@
       colors.webpage.preferred_color_scheme = "dark";
       completion.height = "30%";
       confirm_quit = [ "multiple-tabs" "downloads" ];
+      content.autoplay = false;
       content.cookies.accept = "no-unknown-3rdparty";
       content.geolocation = false;
       content.notifications.enabled = false;
@@ -70,10 +71,10 @@
       downloads.location.directory = "~/tmp";
       fonts.default_family = "Iosevka Term";
       fonts.default_size = "18px";
-      fonts.hints = "default_size default_family";
+      fonts.hints = "22px default_family";
       fonts.statusbar = "22px default_family";
       hints.radius = 1;
-      input.insert_mode.auto_load = false;
+      input.insert_mode.auto_load = true;
       tabs.last_close = "close";
       messages.timeout = 2000;
       scrolling.smooth = true;
@@ -87,11 +88,11 @@
         "progress"
 	    ];
       tabs.background = true;
-      tabs.favicons.show = "never";
+      tabs.favicons.show = "always";
       tabs.indicator.width = 0;
       tabs.max_width = 200;
       tabs.mousewheel_switching = false;
-      tabs.title.format = "{index} = {host}";
+      tabs.title.format = "{index} : {host}";
       zoom.default = 150;
     };
   };

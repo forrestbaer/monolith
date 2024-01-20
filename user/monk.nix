@@ -25,15 +25,22 @@
       delta
       deno
       ghc
+      gimp
       gitui
       haskellPackages.tidal
+      imv
+      inkscape-with-extensions
       just
       kicad
+      krita
       lsd
       nix-bash-completions
+      obs-studio
+      obs-cli
       ocenaudio
       opencv
       pass-wayland
+      qbittorrent
       qjackctl
       qmk
       qpwgraph
@@ -41,6 +48,7 @@
       supercollider-with-sc3-plugins
       taskwarrior
       tmux-mem-cpu-load
+      waylock
     ];
     sessionVariables = {
       PROMPT_COMMAND = "history -a";
