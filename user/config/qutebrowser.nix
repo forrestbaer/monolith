@@ -74,9 +74,10 @@
       fonts.statusbar = "22px default_family";
       hints.radius = 1;
       input.insert_mode.auto_load = false;
+      tabs.last_close = "close";
       messages.timeout = 2000;
+      scrolling.smooth = true;
       statusbar.widgets = [
-        "clock"
         "keypress"
         "search_match"
         "url"
@@ -84,14 +85,14 @@
         "history"
         "tabs"
         "progress"
-	];
+	    ];
       tabs.background = true;
       tabs.favicons.show = "never";
       tabs.indicator.width = 0;
       tabs.max_width = 200;
       tabs.mousewheel_switching = false;
       tabs.title.format = "{index} = {host}";
-      zoom.default = 200;
+      zoom.default = 150;
     };
   };
 }

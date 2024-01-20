@@ -9,16 +9,16 @@
     };
     "org/gnome/desktop/wm/keybindings" = {
       close = ["<Control>q"];
-      toggle-fullscreen = ["<Control><Super>e"];
-      toggle-maximized = ["<Control><Super>i"];
+      toggle-fullscreen = ["<Control><Super>u"];
+      # toggle-maximized = ["<Control><Super>i"];
       switch-input-source = [];
       switch-input-source-backward = [];
       show-desktop = [];
       panel-run-dialog = [];
       switch-windows = [];
       switch-windows-backward = [];
-      switch-applications = ["<Super>Tab"];
-      switch-applications-backward = ["<Super><Shift>Tab"];
+      switch-applications = ["<Super><Shift>Tab"];
+      switch-applications-backward = ["<Super>Tab"];
     };
     "org/gnome/desktop/peripherals/keyboard" = {
       repeat-interval = 15;
@@ -34,8 +34,8 @@
       sleep-inactive-ac-type = "nothing";
     };
     "org/gnome/mutter/keybindings" = {
-      toggle-tiled-left = ["<Control><Super>n"];
-      toggle-tiled-right = ["<Control><Super>o"];
+      # toggle-tiled-left = ["<Control><Super>n"];
+      # toggle-tiled-right = ["<Control><Super>o"];
     };
     "org/gnome/shell/keybindings" = {
       focus-active-notification = [];

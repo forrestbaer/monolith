@@ -28,6 +28,7 @@
       gitui
       haskellPackages.tidal
       just
+      kicad
       lsd
       nix-bash-completions
       ocenaudio

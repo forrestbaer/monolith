@@ -51,6 +51,7 @@ if (packer) then
     use 'tpope/vim-repeat'
     use 'tpope/vim-commentary'
     use 'nvim-treesitter/nvim-treesitter'
+    use 'github/copilot.vim'
     use 'nvim-lualine/lualine.nvim'
     use 'neovim/nvim-lspconfig'
     use 'williamboman/mason.nvim'

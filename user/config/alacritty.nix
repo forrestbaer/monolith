@@ -5,13 +5,13 @@
       window.decorations = "none";
       window.dynamic_padding = true;
       window.padding.x = 10;
-      window.padding.y = 10;
+      window.padding.y = 15;
       env.TERM = "screen-256color";
       mouse = {
         hide_when_typing = true;
       };
       font = {
-        size = 18;
+        size = 20;
       	builtin_box_drawing = true;
         normal = {
           family = "Iosevka Nerd Font";
