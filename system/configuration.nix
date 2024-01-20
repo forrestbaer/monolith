@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 
+
 {
   imports = [
     ./hardware-configuration.nix
@@ -16,6 +17,7 @@
     bash
     binutils
     clang
+    clang-tools
     cmake
     cool-retro-term
     coreutils
@@ -32,14 +34,19 @@
     gnupg
     gnused
     gnutar
+    jq
     lua
     luajit
+    lsusb
     neovim
     nodePackages.typescript
     nodePackages.typescript-language-server
+    python311Full
+    python311Packages.pynvim
+    python311Packages.opencv4
+    python311Packages.numpy
     nodejs
     gnumake
-    python3Full
     ripgrep
     tmux
     tree-sitter
@@ -47,6 +54,7 @@
     unzip
     vim
     w3m
+    waylock
     wget
     which
     wl-clipboard
@@ -117,6 +125,11 @@
       jack.enable = true;
     };
     printing.enable = true;
+    udev = {
+      extraRules = ''
+        SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"
+      '';
+    };
     xserver = {
       enable = true;
       layout = "us";

@@ -93,7 +93,7 @@
       tabs.max_width = 200;
       tabs.mousewheel_switching = false;
       tabs.title.format = "{index} : {host}";
-      zoom.default = 150;
+      zoom.default = 125;
     };
   };
 }

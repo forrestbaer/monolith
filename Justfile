@@ -1,8 +1,8 @@
 switch:
-  sudo nixos-rebuild switch --flake .
+  git add * && sudo nixos-rebuild switch --flake .
 
 test:
-  sudo nixos-rebuild test --flake . --show-trace --verbose
+  git add * && sudo nixos-rebuild test --flake . --show-trace --verbose
 
 up:
   nix flake update
