@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 # neovim packer sync - first boot
+# cabal update; cabal install tidal --lib
 
 {
   imports = [
@@ -21,7 +22,6 @@
     packages = with pkgs; [
       bun
       cabal-install
-      cool-retro-term
       delta
       deno
       ghc

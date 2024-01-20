@@ -7,6 +7,9 @@
       window.padding.x = 10;
       window.padding.y = 10;
       env.TERM = "screen-256color";
+      mouse = {
+        hide_when_typing = true;
+      };
       font = {
         size = 18;
       	builtin_box_drawing = true;

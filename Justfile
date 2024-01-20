@@ -1,4 +1,4 @@
-deploy:
+switch:
   sudo nixos-rebuild switch --flake .
 
 test:

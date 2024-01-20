@@ -17,6 +17,7 @@
     binutils
     clang
     cmake
+    cool-retro-term
     coreutils
     fd
     fzf
@@ -24,6 +25,10 @@
     gcc
     gh
     git
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.just-perfection
+    gnomeExtensions.tiling-assistant
+    gnome.gnome-tweaks
     gnupg
     gnused
     gnutar

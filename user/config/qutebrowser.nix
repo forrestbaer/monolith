@@ -69,9 +69,9 @@
       content.prefers_reduced_motion = true;
       downloads.location.directory = "~/tmp";
       fonts.default_family = "Iosevka Term";
-      fonts.default_size = "15px";
+      fonts.default_size = "18px";
       fonts.hints = "default_size default_family";
-      fonts.statusbar = "17px default_family";
+      fonts.statusbar = "22px default_family";
       hints.radius = 1;
       input.insert_mode.auto_load = false;
       messages.timeout = 2000;
@@ -91,7 +91,7 @@
       tabs.max_width = 200;
       tabs.mousewheel_switching = false;
       tabs.title.format = "{index} = {host}";
-      zoom.default = 115;
+      zoom.default = 200;
     };
   };
 }
