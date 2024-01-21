@@ -34,12 +34,11 @@
       kicad
       krita
       lsd
-      micromamba
       nix-bash-completions
       obs-studio
       obs-cli
       ocenaudio
-      opencv
+      opencv3
       pass-wayland
       qbittorrent
       qjackctl
@@ -49,7 +48,6 @@
       supercollider-with-sc3-plugins
       taskwarrior
       tmux-mem-cpu-load
-      zlib-ng
     ];
     sessionVariables = {
       PROMPT_COMMAND = "history -a";

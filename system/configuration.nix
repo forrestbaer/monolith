@@ -27,31 +27,29 @@
     gcc
     gh
     git
+    gnome.gnome-tweaks
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
     gnomeExtensions.tiling-assistant
-    gnome.gnome-tweaks
+    gnumake
     gnupg
     gnused
     gnutar
     jq
     lua
     luajit
-    lsusb
     neovim
     nodePackages.typescript
     nodePackages.typescript-language-server
-    python311Full
-    python311Packages.pynvim
-    python311Packages.opencv4
-    python311Packages.numpy
     nodejs
-    gnumake
+    pkg-config
+    python311Full
     ripgrep
     tmux
     tree-sitter
     unrar
     unzip
+    usbutils
     vim
     w3m
     waylock
